@@ -1,0 +1,7 @@
+{"Request":
+{"Attribute":[
+{"Category":"access-subject","AttributeId":"user-name","DataType":"string","Value":"Jim"},
+{"Category":"access-subject","AttributeId":"user-name","DataType":"string","Value":"Ken"},
+{"Category":"access-subject","AttributeId":"user-age","DataType":"int","Value":"16"},
+{"Category":"action","AttributeId":"action-id","DataType":"string","Value":"read"},
+{"Category":"paper","AttributeId":"paper-name","DataType":"string","Value":"SCP-096"}]}}
