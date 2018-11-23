@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--request.xsd-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!--Request-->
+	<xs:element name="Request" type="RequestType"/>
+	<!--RequestType-->
+	<xs:complexType name="RequestType">
+		<xs:sequence>
+			<xs:element ref="Description" minOccurs="0"/>
+			<xs:element ref="Attributes" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!--Description-->
+	<xs:element name="Description" type="xs:string"/>
+	
+	<!--Attributes-->
+	<xs:element name="Attributes" type="AttributesType"/>
+	<!--AttributesType-->
+	<xs:complexType name="AttributesType">
+		<xs:sequence>
+			<xs:element ref="Attribute" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="Category" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<!--Attribute-->
+	<xs:element name="Attribute" type="AttributeType"/>
+	<!--AttributeType-->
+	<xs:complexType name="AttributeType">
+		<xs:sequence>
+			<xs:element ref="AttributeValue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="AttributeId" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<!--AttributeValue-->
+	<xs:element name="AttributeValue" type="AttributeValueType"/>
+	<!--AttributeValueType-->
+	<xs:complexType name="AttributeValueType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute ref="DataType" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<!--DataType-->
+	<xs:attribute name="DataType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="string"/>
+				<xs:enumeration value="data"/>
+				<xs:enumeration value="time"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>
