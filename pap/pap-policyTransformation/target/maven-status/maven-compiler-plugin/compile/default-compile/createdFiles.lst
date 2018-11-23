@@ -1,0 +1,13 @@
+org\pap\policyTransformation\AttributeValue.class
+org\pap\policyTransformation\Condition.class
+org\pap\policyTransformation\Match.class
+org\pap\policyTransformation\GenerateMethod.class
+org\pap\policyTransformation\AttributeDesignator.class
+org\pap\policyTransformation\Apply.class
+org\pap\policyTransformation\Policy.class
+org\pap\policyTransformation\Target.class
+org\pap\policyTransformation\PolicyTransformation.class
+org\pap\policyTransformation\AllOf.class
+org\pap\policyTransformation\AnyOf.class
+org\pap\policyTransformation\Rule.class
+org\pap\policyTransformation\Policies.class

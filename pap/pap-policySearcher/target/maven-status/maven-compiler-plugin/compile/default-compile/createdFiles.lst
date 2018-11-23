@@ -1,0 +1,7 @@
+org\pap\policySearcher\ListRemoveDuplicate.class
+org\pap\policySearcher\PolicySearcher.class
+org\pap\policySearcher\Policy.class
+org\pap\policySearcher\PolicySetData.class
+org\pap\policySearcher\PolicyData.class
+org\pap\policySearcher\Match.class
+org\pap\policySearcher\PolicySet.class
