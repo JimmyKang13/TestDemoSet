@@ -1,0 +1,9 @@
+输入：JsonObject policytest, JsonObject requesttest;
+流程：1、
+	2、
+	3、解析AllOf下的数据{...},抽取其中的C、A、D去requesttest中获取对应的Value值;
+	4、根据MatchId的值选择(switch)判断函数(输入:requestValue, policyValue)返回boolean类型;
+	5、同AllOf下的返回值必须全部返回true才可使得AllOf返回true;
+	6、同AnyOf下的返回值只要有一个返回true即可返回true;
+	7、同Target下的所有AnyOf的返回值根据RuleCombiningAlgId的值确定返回值;
+	8、通过第7步中返回值确定Effect的值是否被输出;
