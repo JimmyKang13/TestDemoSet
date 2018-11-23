@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Request
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="request.xsd">
+	<Description>
+		Jim wants to read the paper SCP-096.
+	</Description>
+	<Attributes
+		Category="access-subject">
+		<Attribute
+			AttributeId="user-name">
+			<AttributeValue
+				DataType="string">
+				Jim
+			</AttributeValue>
+			<AttributeValue
+				DataType="string">
+				Ken
+			</AttributeValue>
+		</Attribute>
+		<Attribute
+			AttributeId="user-age">
+			<AttributeValue
+				DataType="int">
+				16
+			</AttributeValue>
+		</Attribute>
+	</Attributes>
+	<Attributes
+		Category="action">
+		<Attribute
+			AttributeId="action-id">
+			<AttributeValue
+				DataType="string">
+				read
+			</AttributeValue>
+		</Attribute>
+	</Attributes>
+	<Attributes
+		Category="paper">
+		<Attribute
+			AttributeId="paper-name">
+			<AttributeValue
+				DataType="string">
+				SCP-096
+			</AttributeValue>
+		</Attribute>
+	</Attributes>
+</Request>

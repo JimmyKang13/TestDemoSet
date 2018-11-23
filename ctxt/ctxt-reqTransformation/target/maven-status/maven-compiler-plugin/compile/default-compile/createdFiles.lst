@@ -1,0 +1,6 @@
+org\ctxt\reqTransformation\GenerateMethod.class
+org\ctxt\reqTransformation\AttributeValue.class
+org\ctxt\reqTransformation\Attribute.class
+org\ctxt\reqTransformation\Request.class
+org\ctxt\reqTransformation\ReqTransformation.class
+org\ctxt\reqTransformation\Attributes.class
